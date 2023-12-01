@@ -11,7 +11,6 @@
 .home_container {
     position: relative;
     width: 100%;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -191,7 +190,7 @@
 }
 
 .nav_links2 {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -500px;
     transition: 0.5s;
