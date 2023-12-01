@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home_container">
+        <div class="navbar">
+            <div class="nav_logo">
+                <img src="./img/logo.svg" alt="">
+                <div class="nav_card">
+                    <div class="nav_cards">
+                        <p class="nav_cards_h06">Бесплатно по России</p>
+                        <p><i class="bi bi-telephone"></i>+7 (999) 224-33-53</p>
+                    </div>
+                    <div class="nav_cards">
+                        <p class="nav_cards_h06">Время работы</p>
+                        <p><i class="bi bi-clock-history"></i>Пн-Вс 10:00-20:00</p>
+                    </div>
+                </div>
+                <div class="nav_btn">
+                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                    <p>ПЕРЕЗВОНИМ ЗА 24 СЕКУНДЫ</p>
+                </div>
+                <div class="nav_media">
+                    <i onclick="menu()" class="bi bi-list"></i>
+                </div>
+            </div>
+
+            <div class="nav_links2">
+                <div class="nav_li">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Дома из бруса</a></li>
+                        <li><a href="#">Бани из бруса</a></li>
+                        <li><a href="#">Мобильные бани</a></li>
+                        <li><a href="#">Как заказать</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <i id="close" onclick="close()" class="bi bi-x"></i>
+                </div>
+                <div class="nav_btn2">
+                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                    <p>ПЕРЕЗВОНИМ ЗА 24 СЕКУНДЫ</p>
+                </div>
+            </div>
+
+            <div class="nav_bottom">
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Дома из бруса</a></li>
+                        <li><a href="#">Бани из бруса</a></li>
+                        <li><a href="#">Мобильные бани</a></li>
+                        <li><a href="#">Как заказать</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="nav_adres">
+                    <p>Российская Федерация, Новгородская область, город Пестово, Устюженское шоссе 4.</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="home_haeder">
+            <div class="qora">
+            <div class="home_left">
+                <div class="home_header_h1">
+                    <h1>Купить баню под ключ от производителя</h1>
+                </div>
+                <div class="home_header_p">
+                    <p>★ Работаем без предоплаты</p>
+                    <p>★ Опыт работы более 10 лет</p>
+                    <p>★ Гарантия на все строения</p>
+                </div>
+                <div class="home_header_btns">
+                    <button class="home_btn1">Выбрать баню</button>
+                    <button class="home_btn2">Рассчитать стоимость</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="home_main">
+            
+        </div>
+    </div>
+
+    <script>
+        function menu() {
+            document.querySelector(".nav_links2").style = "position: absolute; right: 0; transition: .5;"
+        }
+
+        function close() {
+            document.querySelector(".nav_links2").style = "position: absolute; right: -500px;"
+        }
+    </script>
+</body>
+</html>
