@@ -50,10 +50,10 @@
 .navbar {
     width: 100%;
     margin: auto;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     padding-top: 20px;
     margin-bottom: 5%;
-    padding: 1rem 6rem;
+    /* padding: 1rem 6rem; */
 } 
 
 .header_img {
@@ -74,7 +74,12 @@
     min-height: 861px;
     z-index: -1;
 }
-
+/* .white_main{
+    padding: 20px;
+} */
+.main_black{
+    padding: 20px;
+}
 .white_main .nav_card {
     display: flex;
     color: #fff;
@@ -449,13 +454,13 @@
         margin-top: 20%;
     }
 
-    .navbar {
+    /* .navbar {
         width: 100%;
         max-width: none;
         padding-top: 20px;
         margin-bottom: 5%;
         padding: 1rem 6rem;
-    }
+    } */
 
     .nav_btn p {
         color: #fff;
