@@ -327,13 +327,13 @@
 
 .cards_yellow {
     width: 100%;
-    max-width: 120px;
+    max-width: 150px;
     height: 30px;
     border-radius: 5px;
     background: #ffe100;
     color: #000000;
     display: flex;
-    align-items: center;
+    align-items: center !important ;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -343,7 +343,7 @@
 }
 
 .cards_yellow i {
-    font-size: 14px;
+    font-size: 18px;
     padding-right: 5px;
 }
 
@@ -378,6 +378,7 @@
 .home_end_bg {
     width: 100%;
     overflow: hidden;
+    margin-top: 3rem;
 }
 
 .home_end_bg img {
@@ -530,12 +531,15 @@
   }
 
   .swiper-slide {
-    text-align: center;
+    width: 450px !important;
+    margin-right: 0 !important;
+    text-align: left;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
   }
 
   .swiper-slide img {
