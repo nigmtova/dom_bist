@@ -6,31 +6,72 @@
     text-decoration: none;
     list-style: none;
     font-family: system-ui, Helvetica, sans-serif;
+    scrollbar-color: #d1d1d1 #333 !important;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #d1d1d1 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #eee;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    /* border: 3px solid #fff5f5; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 .home_container {
-    position: relative;
     width: 100%;
+    position: relative;
 }
 
 .navbar {
     width: 100%;
     margin: auto;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     padding-top: 20px;
     margin-bottom: 5%;
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
 } 
 
-.home_haeder {
+.header_img {
+    position: relative;
     width: 100%;
-    height: 109vh;
+    height: 900px;
+    margin-bottom: 5%;
+}
+
+.header_bg {
+    position: absolute;
+    top: 0;
     background: url(./img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
+    width: 100%;
+    min-height: 861px;
     z-index: -1;
 }
 
@@ -105,19 +146,20 @@
 }
 
 .qora {
-    height: 109vh;
+    min-height: 861px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8))!important;
     padding: 20px;
+    z-index: -1;
 }
 
 .home_left {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 3%;
     margin-top: 15%;
 }
 
@@ -196,7 +238,7 @@
     transition: 0.5s;
     background: #000000e1;
     width: 400px;
-    min-height: 109vh;
+    min-height: 697px;
     padding: 20px;
 }
 
@@ -215,10 +257,136 @@
     justify-content: space-between;
 }
 
+.home_main_card {
+    display: flex;
+    width: 100%;
+    max-width: 1650px;
+    overflow: scroll;
+    margin: 3rem;
+}
 
+.home_med_card {
+    display: flex;
+    width: 100%;
+    max-width: 1650px;
+    overflow: scroll;
+    margin: 3rem;
+}
 
+.home_med_cards {
+    display: block;
+    min-width: 300px;
+    min-height: 400px;
+    border-radius: 20px;
+    background: #eee;
+    margin: 0.6rem;
+    position: relative;
+    cursor: pointer;
+}
 
+.home_main_cards {
+    display: block;
+    min-width: 300px;
+    min-height: 400px;
+    border-radius: 20px;
+    background: #eee;
+    margin: 0.6rem;
+    position: relative;
+    cursor: pointer;
+}
 
+.home_main_cards img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: .5s;
+}
+
+.home_main_cards img:hover {
+    scale: 1.01;
+}
+
+.home_main_text {
+    padding: 1rem;
+}
+
+.home_med_cards img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: .5s;
+}
+
+.home_med_cards img:hover {
+    scale: 1.01;
+}
+
+.home_med_text {
+    padding: 1rem;
+}
+
+.cards_yellow {
+    width: 100%;
+    max-width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background: #ffe100;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.cards_yellow i {
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.home_main_cards_h05 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.home_main_narx {
+    font-size: 20px;
+    color: #862000;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.home_med_cards_h05 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.home_med_narx {
+    font-size: 20px;
+    color: #862000;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.home_end_bg {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home_end_bg img {
+    transition: .5s ease;
+}
+
+.home_end_bg img:hover {
+    scale: 1.05 ;
+}
 
 
 
@@ -254,11 +422,10 @@
 
     .navbar {
         width: 100%;
-        margin: auto;
-        max-width: 1200px;
+        max-width: none;
         padding-top: 20px;
         margin-bottom: 5%;
-        padding: 1rem 1rem;
+        padding: 1rem 6rem;
     }
 
     .nav_btn p {
