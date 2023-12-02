@@ -214,7 +214,7 @@
     text-align: left;
     font-size: 24px;
     line-height: 30px;
-    padding: 20px 0px;
+    padding: 40px 0px;
     color: white;
 }
 
@@ -556,6 +556,9 @@
     }
 }
 @media (max-width:900px) {
+    .header_img{
+        height: 700px;
+    }
     .nav_links {
         display: none;
     }
