@@ -422,6 +422,12 @@
     scale: 1.05 ;
 }
 
+.white_main .nav_card2 {
+    display: none;
+    color: #fff;
+    font-size: 18px;
+}
+
 
 
 
@@ -568,6 +574,23 @@
         display: block;
     }
 
+    .white_main .nav_card {
+        display: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .white_main .nav_card2 {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+
+    .nav_card2 .nav_cards2 {
+        margin-bottom: 1rem;
+    }
+
     .nav_link2 {
         width: 100%;
         min-height: 109vh;
@@ -646,7 +669,7 @@
   }
 
   .swiper-slide {
-    width: 450px !important;
+    width: 435px !important;
     margin-right: 0 !important;
     text-align: left;
     font-size: 18px;
