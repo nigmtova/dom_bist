@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.home_end_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 20px;
+}
+
+.home_end_left {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.home_end_top_h1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home_end_top_h1 img {
+    margin-right: 1rem;
+}
+
+.strelka_p {
+    display: flex;
+    align-items: center;
+}
+
+.strelka_p img {
+    margin-left: 2rem;
+}
+
+.home_end_left p span {
+    font-weight: 700;
+}
+
+.home_end_right {
+    position: relative;
+}
+
+.home_end_right button {
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #ffe100;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .4s ease;
+    position: absolute;
+    top: 30%;
+    font-weight: 600;
+}
+
+.home_end_right button:hover {
+    background: #ffe100;
+    color: #862000 ;
+    font-weight: 600;
+}
+
+.home_fundament {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.fund_h1 {
+    display: flex;
+    align-items: center;
+}
+
+.fund_h1 img {
+    margin-right: 1rem;
+}
+
+.fundament_card {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.fundament_cards {
+    width: 400px;
+    min-height: 400px;
+    margin: 0.4rem;
+    padding: 1rem;
+    border: 1px solid #5555;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.fundament_cards img {
+    width: 100%;
+    transition: .4s ease;
+}
+
+.fundament_cards img:hover {
+    scale: 1.01;
+}
+
+.fundament_cards p {
+    font-size: 18px;
+    line-height: 23px;
+    color: #373435;
+}
+
+.fundament_cards h4 {
+    color: black;
+    font-family: "Oswald",sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
