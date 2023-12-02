@@ -75,9 +75,14 @@
     z-index: -1;
 }
 
-.nav_card {
+.white_main .nav_card {
     display: flex;
     color: #fff;
+    font-size: 18px;
+}
+.main_black .nav_card {
+    display: flex;
+    color: black;
     font-size: 18px;
 }
 
@@ -96,7 +101,7 @@
     font-size: 20px;
 }
 
-.nav_btn button {
+.white_main .nav_btn button {
     background: transparent;
     width: 200px;
     height: 45px;
@@ -107,14 +112,31 @@
     border: 1px solid #ffe100;
     transition: all .4s ease;
 }
+.main_black .nav_btn button {
+    background: transparent;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #ffe100;
+    transition: all .4s ease;
+}
 
 .nav_btn button:hover {
     color: #862000;
     background: #ffe100;
 }
 
-.nav_btn p {
+.white_main .nav_btn p {
     color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.main_black .nav_btn p {
+    color: black;
     font-size: 20px;
     font-weight: 600;
     margin-top: 0.5rem;
@@ -132,8 +154,14 @@
     align-items: center;
 }
 
-.nav_links ul li a {
+.white_main .nav_links ul li a {
     color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.main_black .nav_links ul li a {
+    color: black;
     font-size: 18px;
     font-weight: 600;
     margin-right: 2rem;
