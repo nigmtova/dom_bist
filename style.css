@@ -270,12 +270,14 @@
     top: 0;
     right: -500px;
     transition: 1s;
-    background: #000000e1;
+    background: #000000;
     width: 400px;
     height: 100vh;
     padding: 20px;
 }
-
+.nav_li img{
+    margin-bottom: 20px;
+}
 .nav_media {
     display: none;
 }
@@ -429,7 +431,13 @@
     color: #fff;
     font-size: 18px;
 }
-
+.main_black .bi-list{
+    color: black;
+}
+.nav_links2 p{
+    color: white;
+    margin-top: 10px;
+}
 
 
 

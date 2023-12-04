@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./doma.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <div class="katalog_tovarov">
@@ -38,6 +40,7 @@
             <div class="nav_links2">
                 <div class="nav_li">
                     <ul>
+                      <img src="./img/footer_logo.svg" alt="">
                       <li><a href="./home.html">Главная</a></li>
                       <li><a href="./doma-iz-brusa.html">Дома из бруса</a></li>
                       <li><a href="./bani-iz-brusa.html">Бани из бруса</a></li>
@@ -221,5 +224,16 @@
       },
     });
   </script>
+  <script>
+    function menu() {
+            document.querySelector(".nav_links2").style = "position: fixed; right: 0; transition: .5;"
+            document.querySelector("body").style="overflow:hidden"
+        }
+
+        function close1() {
+            document.querySelector(".nav_links2").style = "position: fixed; right: -500px; transition: .5;"
+            document.querySelector("body").style="overflow:scroll"
+        }
+</script>
 </body>
 </html>
