@@ -124,6 +124,10 @@
     margin-bottom: 1rem;
 }
 
+.home_footer {
+    padding: 20px;
+}
+
 .footer {
     width: 100%;
     background: #111111;
