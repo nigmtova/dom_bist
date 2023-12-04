@@ -486,7 +486,7 @@
 @media(max-width:500px){
     .home_header_btns .home_btn1 {
         width: 100%;
-        max-width: 220px !important;
+        max-width: 220px;
         padding: 20px;
         border-radius: 5px;
         font-weight: bold;
@@ -502,7 +502,7 @@
     }
     .home_btn2 {
         width: 100%;
-        max-width: 220px !important;
+        max-width: 220px;
         padding: 20px;
         border-radius: 5px;
         font-weight: bold;
