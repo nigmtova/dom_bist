@@ -38,10 +38,10 @@
             <div class="nav_links2">
                 <div class="nav_li">
                     <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Дома из бруса</a></li>
-                        <li><a href="#">Бани из бруса</a></li>
-                        <li><a href="#">Мобильные бани</a></li>
+                        <li><a class="navbar_color" href="./home.html">Главная</a></li>
+                        <li><a href="./doma-iz-brusa.html">Дома из бруса</a></li>
+                        <li><a href="./bani-iz-brusa.html">Бани из бруса</a></li>
+                        <li><a href="./mobilniy-bani.html">Мобильные бани</a></li>
                         <li><a href="#">Как заказать</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
@@ -67,10 +67,10 @@
             <div class="nav_bottom">
                 <div class="nav_links">
                     <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Дома из бруса</a></li>
-                        <li><a href="#">Бани из бруса</a></li>
-                        <li><a href="#">Мобильные бани</a></li>
+                        <li><a class="navbar_color" href="./home.html">Главная</a></li>
+                        <li><a href="./doma-iz-brusa.html">Дома из бруса</a></li>
+                        <li><a href="./bani-iz-brusa.html">Бани из бруса</a></li>
+                        <li><a href="./mobilniy-bani.html">Мобильные бани</a></li>
                         <li><a href="#">Как заказать</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
@@ -982,7 +982,20 @@
             },navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+      },breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
         });
 
         function menu() {
