@@ -104,10 +104,11 @@
 .fundament_cards img {
     width: 100%;
     transition: .4s ease;
+    margin-bottom: 1rem;
 }
 
 .fundament_cards img:hover {
-    scale: 1.01;
+    scale: 1.1;
 }
 
 .fundament_cards p {
@@ -138,6 +139,7 @@
 .footer_min {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1500px;
     margin: auto;
@@ -192,6 +194,7 @@
 
 .footer_links2 h1 {
     font-size: 25px;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -211,4 +214,103 @@
 .footer_bottom p {
     line-height: 30px;
     color: #555;
+}
+
+
+
+@media (max-width:1100px) {
+    .home_end_top {
+        display: block;
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    .strelka_p img {
+        display: none;
+    }
+
+    .home_end_left {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .home_end_right {
+        width: 350px;
+        margin: auto;
+        position: relative;
+    }
+
+    .home_fundament {
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        margin-top: 5%;
+        padding: 20px;
+    }
+}
+
+@media (max-width:900px) {
+    .fundament_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }    
+}
+
+
+@media (max-width:600px) {
+    .footer_bottom p {
+        line-height: 30px;
+        color: #555;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:420px) {
+    .home_end_right img {
+        width: 100%;
+    }
+
+    .fund_h1 h1 {
+        font-size: 18px;
+    }
+
+    .home_end_left {
+        font-size: 15px;
+    }
+
+    .home_end_top_h1 h1 {
+        font-size: 18px;
+    }
+
+    .footer_bottom p {
+        line-height: 21px;
+        color: #555;
+        margin-top: 1.5rem;
+        font-size: 13px;
+    }
+
+    .footer p a {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .footer_links2 h1 {
+        font-size: 20px;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .fundament_cards p {
+        font-size: 15px;
+        line-height: 23px;
+        color: #373435;
+    }
 }
