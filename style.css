@@ -842,7 +842,9 @@
     align-items: center;
     margin-bottom: 2rem;
   }
-
+.white_main{
+    overflow: hidden;
+}
   .home_container .swiper-slide img {
     display: block;
     width: 100%;
