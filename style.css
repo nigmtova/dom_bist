@@ -10,8 +10,17 @@
 }
 
 
-.phone_number {
+.phone_number a {
     cursor: pointer;
+    color: #fff;
+}
+
+.black_number a {
+    color: #000000;
+}
+
+.black_number a:hover {
+    text-decoration: underline;
 }
 
 .phone_number:hover {
@@ -75,7 +84,7 @@
 .header_bg {
     position: absolute;
     top: 0;
-    background: url(./img/header.jpg);
+    background: url(https://vistroydom.ru/image/body_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -207,13 +216,26 @@
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8))!important;
     padding: 20px;
     z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
 }
 
 .home_left {
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 800px;
     margin-top: 300px;
+}
+
+.qora img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 600px;
+    width: 60%;
 }
 .navbar_color{
     color: #4E9200 !important;
@@ -469,6 +491,11 @@
 
 
 /* media css */
+@media (max-width:1200px) {
+    .home_header_dom {
+        display: none;
+    }
+}
 @media (max-width:1100px) {
     .home_header_h1 {
         font-weight: bold;
@@ -621,7 +648,7 @@
         display: none;
     }
     .home_left{
-        margin-top: 120px;
+        margin-top: 0;
     }
     .nav_card {
         display: none;
@@ -808,7 +835,7 @@
     .header_bg {
         position: absolute;
         top: 0;
-        background: url(./img/header.jpg);
+        background: url(https://vistroydom.ru/image/body_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -818,7 +845,7 @@
     }
 
     .qora {
-        min-height: 620px;
+        min-height: 500px;
         position: absolute;
         top: 0;
         left: 0;
@@ -828,11 +855,22 @@
         z-index: -1;
     }
 
+    .home_header_dom {
+        position: relative;
+        z-index: 1;
+    }
+
     .home_left {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        margin-top: 36%;
+    }
+
+    .qora img {
+        position: absolute;
+        right: 0;
+        max-width: 600px;
+        width: 100%;
     }
 
     .home_header_btns .home_btn2 {
@@ -905,7 +943,7 @@
   .home_container .swiper-button-next, .home_container .swiper-rtl .home_container .swiper-button-prev{
     right: 0px !important;
     top: 40px !important;
-    background-color: #4E9200 !important;
+    background-color: #333 !important;
     padding: 20px !important;
     border-radius: 5px;
     font-size: 15px !important;
@@ -914,7 +952,7 @@
     right: 50px !important;
     left: auto !important;
     top: 40px !important;
-    background-color: #4E9200 !important;
+    background-color: #333 !important;
     padding: 20px !important;
     font-size: 15px !important;
     border-radius: 5px;
@@ -929,7 +967,7 @@
     cursor: pointer;
     width: 100%;
     border-radius: 20px;
-    background: #4E9200;
+    background: #333;
     padding: 10px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
@@ -957,10 +995,10 @@
     height: 30px;
     width: 130px;
     background: white;
-    background: #4E9200;
+    background: #333;
     position: relative;
     transform: skew(-40deg);
-    box-shadow: -10px -10px 0 0 #4E9200;
+    box-shadow: -10px -10px 0 0 #333;
   }
   
   .home_card_black .top-section .border::before {
@@ -972,7 +1010,7 @@
     right: -15px;
     background: rgba(255, 255, 255, 0);
     border-top-left-radius: 10px;
-    box-shadow: -5px -5px 0 2px #4E9200;
+    box-shadow: -5px -5px 0 2px #333;
   }
   
   .home_card_black .top-section::before {
@@ -984,7 +1022,7 @@
     height: 15px;
     width: 15px;
     border-top-left-radius: 15px;
-    box-shadow: -5px -5px 0 2px #4E9200;
+    box-shadow: -5px -5px 0 2px #333;
   }
   
   .home_card_black .top-section .icons {
