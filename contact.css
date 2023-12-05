@@ -9,7 +9,7 @@
 .contact_header {
     width: 100%;
     max-width: 1200px;
-    border: 1px solid #5555;
+    border: 1px solid #4E9200;
     border-radius: 20px;
     padding: 3rem 2rem;
     background: #fff;
@@ -37,13 +37,13 @@
 
 .contact_header_text p i {
     font-size: 30px;
-    color: #862000;
+    color: #4E9200;
     margin-right: 0.5rem;
 }
 
 
 .contact_header_text p a {
-    color: #862000;
+    color: #4E9200;
 }
 
 .contact_header_text p a:hover {
@@ -74,7 +74,7 @@
 
 .contact_main_h1 p i {
     font-size: 25px;
-    color: #862000;
+    color: #4E9200;
     margin-right: 0.5rem;
 }
 
@@ -83,7 +83,7 @@
     .contact_header {
         width: 100%;
         max-width: 1200px;
-        border: 1px solid #5555;
+        border: 1px solid #4E9200;
         border-radius: 20px;
         padding: 2rem 1rem;
         background: #fff;
