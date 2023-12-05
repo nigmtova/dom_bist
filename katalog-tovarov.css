@@ -5,12 +5,21 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 15px;
 }
 .katalog_swiper_in{
-    width: 70%;
+    width: 62%;
+}
+.right_swiper{
+    width: 400px;
 }
 .katalog_swiper .swiper-wrapper{
     height: 500px !important;
+}
+.katalog_swiper .mySwiper .swiper-wrapper{
+    height: auto !important;
 }
 .katalog_swiper .mySwiper{
     margin-top: 10px;
@@ -31,6 +40,8 @@
 }
 #swiper-wrapper .swiper-slide img{
     height: 100%;
+    border: 1px solid rgb(78, 146, 0);
+    width: 99.5%;
 }
 .swipers_flex{
     display: flex;
@@ -52,12 +63,20 @@
 }
 
 .right_swiper p {
+    margin-top: 10px;
     line-height: 36px;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 20px;
     color: #444444;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dadbdc;
+    padding: 10px 0px;
 }
-
+.right_swiper p span{
+    color: #4E9200;
+    font-weight: 600;
+}
 .right_swiper h3 {
     color: #4E9200;
     margin-bottom: 1rem;
@@ -66,21 +85,37 @@
 }
 
 .right_swiper button {
-    width: 300px;
+    width: 100%;
     height: 55px;
-    border: 1px solid #ffe100;
-    border-radius: 30px;
-    color: #4E9200;
-    background: transparent;
+    background-color:#ffe100;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    margin-top: 50px;
     cursor: pointer;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     transition: .4s cubic-bezier(0.23, 1, 0.320, 1);
+    transition: 0.8s;
 }
-
-.right_swiper button:hover {
-    background: #ffe100;
-    color: #4E9200;
+.katalog_swiper .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+.katalog_swiper .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+.katalog_swiper .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 16px !important;
+}
+.katalog_swiper .right_swiper button:hover {
+    background: #4E9200;
+    color: #fff;
 }
 
 
