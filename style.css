@@ -894,6 +894,15 @@
     }
 }
 
+@media (max-width: 350px) {
+    .home_header_p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 30px;
+        padding: 3px 16px 10px;
+        color: white;
+    }   
+}
 
 
 
