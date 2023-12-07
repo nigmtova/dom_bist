@@ -389,7 +389,9 @@
 .home_main_text {
     padding: 1rem;
 }
-
+#mySwiper{
+    margin-top: 80px;
+}
 .home_med_cards img {
     width: 100%;
     border-top-right-radius: 20px;
