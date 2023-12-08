@@ -26,4 +26,13 @@
     margin: auto;
     margin-top: 80px;
 }
-
+@media(max-width:900px){
+    .doma_iz_brusa_cards{
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width:600px){
+    .doma_iz_brusa_cards{
+        grid-template-columns: auto;
+    }
+}

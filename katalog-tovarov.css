@@ -14,6 +14,7 @@
 }
 .right_swiper{
     width: 400px;
+    margin-left: 25px;
 }
 .katalog_swiper .swiper-wrapper{
     height: 500px !important;
@@ -36,7 +37,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 140px;
 }
 #swiper-wrapper .swiper-slide img{
     height: 100%;
@@ -118,7 +118,36 @@
     color: #fff;
 }
 
-
+@media(max-width:1200px){
+    .katalog_swiper .swiper-wrapper{
+        height: auto !important;
+    }
+}
+@media(max-width:1000px){
+    .right_swiper{
+        width: 35%;
+    }
+    .right_swiper p{
+        line-height: 28px;
+        font-size: 18px;
+    }
+    .right_swiper h2{
+        font-size: 25px;
+    }
+}
+@media(max-width:800px){
+    .katalog_swiper{
+        display: block;
+    }
+    .katalog_swiper_in{
+        width: 100%;
+    }
+    .right_swiper{
+        width: 100%;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+}
 @media (max-width:600px) {
     .katalog_swiper {
         max-width: 1200px;
@@ -129,9 +158,25 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
-
-    .katalog_swiper .swiper-wrapper {
-        height: 0 !important;
+}
+@media(max-width:480px){
+    .katalog_swiper .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        width: 35px !important;
+        height: 35px !important;
+        padding: 0;
+    }
+    .katalog_swiper .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        width: 35px !important;
+        height: 35px !important;
+        padding: 0;
+    }
+    .katalog_swiper .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 14px !important;
+    }
+    .cancel_div h1 {
+        font-weight: 100;
+        color: #707070;
+        font-size: 14px !important;
+        margin-right: 6px !important;
     }
 }
