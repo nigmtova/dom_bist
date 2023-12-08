@@ -112,7 +112,8 @@
   </div>
   <div class="qora1">
     <div class="zakaz_zvonok">
-      <img src="./img/logo.svg" alt="">
+      <div class="zvonk_img"><p onclick="close3()">Закрыть <i class="bi bi-x-lg"></i></p></div>
+      <div class="zvonk_imgs"><img src="./img/logo.svg" alt=""></div>
       <div class="zvonok_text">
         <h1>Здравствуйте!
           Оставьте номер, и мы Вам перезвоним!</h1>
@@ -1003,6 +1004,11 @@
   function nav_btn12() {
     document.querySelector(".zakaz_zvonok").style = "display: block;"
     document.querySelector(".qora2_bg").style = "display: flex;"
+  }
+
+  function close3() {
+    document.querySelector(".zakaz_zvonok").style = "display:none;"
+    document.querySelector(".qora2_bg").style = "display:none;"
   }
 
   function qora() {
