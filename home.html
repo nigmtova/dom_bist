@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="nav_btn">
-                    <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                    <button onclick="nav_btn12()">ЗАКАЗАТЬ ЗВОНОК</button>
                     <p>ПЕРЕЗВОНИМ ЗА 24 СЕКУНДЫ</p>
                 </div>
                 <div class="nav_media">
@@ -39,8 +39,8 @@
 
             <div class="nav_links2">
                 <div class="nav_li">
-                    <ul>                      <img src="./img/footer_logo.svg" alt="">
-
+                    <ul>
+                      <img src="./img/footer_logo.svg" alt="">
                       <li><a href="./home.html">Главная</a></li>
                       <li><a href="./doma-iz-brusa.html">Дома из бруса</a></li>
                       <li><a href="./bani-iz-brusa.html">Бани из бруса</a></li>
@@ -105,6 +105,28 @@
             </div>
             </div>
     </div>
+
+    <div onclick="qora()" class="qora2_bg">
+   
+  </div>
+  <div class="qora1">
+    <div class="zakaz_zvonok">
+      <div class="zvonk_img"><p onclick="close3()">Закрыть <i class="bi bi-x-lg"></i></p></div>
+      <div class="zvonk_imgs"><img src="./img/logo.svg" alt=""></div>
+      <div class="zvonok_text">
+        <h1>Здравствуйте!
+          Оставьте номер, и мы Вам перезвоним!</h1>
+          <div class="zvonk_inp">
+            <input type="tel" placeholder="+998(__)___-__-__">
+            <button>Позвоните мне!</button>
+          </div>
+          <p>Нажимая на кнопку "Позвоните мне", я даю свое согласие на обработку персональных данных и принимаю <a href="#">условия соглашения</a></p>
+          <div class="zvonk_h3">
+            <h3>Выбрать удобное время звонка</h3>
+          </div>
+      </div>
+    </div>
+  </div>
 
         <div class="home_main">
             <div class="swiper mySwiper">
@@ -978,6 +1000,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+  function nav_btn12() {
+    document.querySelector(".zakaz_zvonok").style = "display: block;"
+    document.querySelector(".qora2_bg").style = "display: flex;"
+  }
+
+  function close3() {
+    document.querySelector(".zakaz_zvonok").style = "display:none;"
+    document.querySelector(".qora2_bg").style = "display:none;"
+  }
+
+  function qora() {
+    document.querySelector(".zakaz_zvonok").style = "display:none;"
+    document.querySelector(".qora2_bg").style = "display:none;"
+  }
+
   function menu() {
           document.querySelector(".nav_links2").style = "position: fixed; right: 0; transition: .5;"
           document.querySelector("body").style="overflow:hidden"
