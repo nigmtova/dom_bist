@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./katalog-tovarov.css">
-    <link rel="stylesheet" href="./doma.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="katalog_tovarov">
@@ -95,7 +92,7 @@
         <div class="katalog_swiper">
           <div class="katalog_swiper_in">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-          <div class="swiper-wrapper">
+          <div id="swiper-wrapper" class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="https://vistroydom.ru/image/cache/catalog/catalog/127-600x450.jpg" />
             </div>
@@ -109,8 +106,8 @@
               <img src="https://vistroydom.ru/image/cache/catalog/catalog/127_3-400x300.jpg" />
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div id="swiper-button-next" class="swiper-button-next"></div>
+          <div id="swiper-button-prev" class="swiper-button-prev"></div>
         </div>
         <div thumbsSlider="" class="swiper mySwiper">
           <div id="swiper-wrapper" class="swiper-wrapper">
@@ -514,6 +511,369 @@
         <div class="swiper-button-prev"></div>
         <!-- <div class="swiper-pagination"></div> -->
       </div></div>
+
+      <div class="calculation">
+        <div class="calculation_first">
+          <div class="calculation_first_card">
+            <h2>Под усадку 140 140 брус сырой</h2>
+          </div>
+          <div class="calculation_first_card">
+            <h2>Под ключ 90 140 брус сырой</h2>
+          </div>
+          <div class="calculation_first_card">
+            <h2>Под ключ 140 140 брус сырой</h2>
+          </div>
+          <div class="calculation_first_card">
+            <h2>Под ключ 90 140 брус сухой</h2>
+          </div>
+          <div class="calculation_first_card">
+            <h2>Под ключ 140 140 брус сухой</h2>
+          </div>
+        </div>
+        <div id="calculation_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="calculation_first_card">
+              <h2>Под усадку 140 140 брус сырой</h2>
+            </div></div>
+            <div class="swiper-slide"><div class="calculation_first_card">
+              <h2>Под ключ 90 140 брус сырой</h2>
+            </div></div>
+            <div class="swiper-slide"><div class="calculation_first_card">
+              <h2>Под ключ 140 140 брус сырой</h2>
+            </div></div>
+            <div class="swiper-slide"><div class="calculation_first_card">
+              <h2>Под ключ 90 140 брус сухой</h2>
+            </div></div>
+            <div class="swiper-slide"><div class="calculation_first_card">
+              <h2>Под ключ 140 140 брус сухой</h2>
+            </div></div>
+          </div>
+          <div id="swiper-button-next1"  class="swiper-button-next"></div>
+    <div id="swiper-button-prev1"  class="swiper-button-prev"></div>
+        </div>
+        <div class="calculation_table">
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Сборка</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Входит в стоимость</h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Основание</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Обрезной брус 100х150 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Стены 1-го этажа	</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Профилированный брус 90х140 мм. Сборка на металлические гвозди, с прокладкой межвенцового утеплителя, шириной 80 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Перегородки 1-го этажа	</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Профилированный брус сечением 90х140 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Окна</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Имитация стеклопакетов, деревянные. Установка согласно проекту.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Двери</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Филенчатые, деревянные. Установка согласно проекту.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Отделка потолков и мансардного этажа	</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Вагонка принудительной сушки, сорта "В"
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Полы</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Шпунтованная доска, принудительной сушки, толщиной 27 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Погонаж</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Плинтус, хвоя, камерной сушки
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Утепление</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Минеральная вата, толщина слоя 50 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Стропильная система	</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Обрезной брусок сечением 40х100 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Порешетник</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Обрезная доска 20х100 мм., 2 сорта
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Лаги и перекрытия	</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Обрезной брус сечением 50х150 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Черновой пол	</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Обрезная доска 20х100 мм., второго сорта, укладывается на череповой брусок 40х50 мм.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Фронтоны</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Каркасно-щитовые. Наружная отделка - вагонка естественной влажности.
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Кровля</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Кровельный лист Ондулин
+            </h3></div>
+          </div>
+          <div class="calculation_table_cards">
+            <div id="calculation_h2" class="calculation_table_card"><h2>Метизы</h2></div>
+            <div id="calculation_h3" class="calculation_table_card"><h3>Строительные гвозди. Для внутренней отделки используются оцинкованные гвозди</h3></div>
+          </div>
+        </div>
+        <h3 class="table_h3">384 000 рублей</h3>
+        <button class="table_button">ЗАКАЗАТЬ</button>
+      </div>    
+      
+      <div class="table_2">
+        <h2>Выберите дополнительные услуги</h2>
+        <div class="for_table_2_cards">
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Фундамент</h2>
+          </div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Блочные опоры	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>8800 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Винтовые сваи	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>	38500 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Дополнительные работы</h2>
+          </div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Антисептическая обработка основания	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>8400 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Увеличение высоты потолка на 1 венец</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>6150 руб</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Сборка сруба на нагеля	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>18700 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Сборка сруба на пружинный узел	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>37400 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Стыковка в "теплый угол", АКЦИЯ !!!	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>	0 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Утепление пола, потолка, мансарды до 100 мм.</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>7650 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Замена Ондулина на металлочерепицу	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>19800 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Замена деревянных окон на ПВХ	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>25000 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Дополнительное окно	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>	4300 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Установка металлической двери. Россия	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>10000 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Установка металлической двери. Китай	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>6000 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Монтаж роек в оконные проемы	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">
+            <h3>4500 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Монтаж роек в дверные проемы	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">  
+            <h3>4000 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Дополнительные постройки
+            </h2>
+          </div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Бытовка строительная 2х3 м.	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">  
+            <h3>17000 руб.</h3>
+          </div></div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Разное
+            </h2>
+          </div>
+        </div>
+        <div class="table2_cards">
+          <div id="table2_card_h2" class="table2_card">
+            <h2>Аренда генератора (бензин заказчика)	</h2>
+          </div>
+          <div class="for_table_2_flex">
+          <div id="table2_card_inp" class="table2_card">
+            <input type="checkbox">
+          </div>
+          <div id="table2_card_h3" class="table2_card">  
+            <h3>	6000 руб.</h3>
+          </div></div>
+        </div>
+        <h4>Общая стоимость:</h4>
+        <h5>384 000 рублей</h2>
+      </div>
+      </div>
+
       <div class="footer">
         <div class="footer_min">
             <div class="footer_links1">
@@ -582,7 +942,41 @@
 
 
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper("#calculation_swiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          600: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          800: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
