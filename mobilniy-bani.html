@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <div class="main_black">
+  <div class="main_black">
     <div class="doma_iz_brusa">
     <div class="navbar">
         <div class="nav_logo">
@@ -50,7 +50,7 @@
                 <i id="close" onclick="close1()" class="bi bi-x"></i>
             </div>
             <div class="nav_btn2">
-                <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                <button onclick="nav_btn12()">ЗАКАЗАТЬ ЗВОНОК</button>
                 <p>ПЕРЕЗВОНИМ ЗА 24 СЕКУНДЫ</p>
             </div>
         </div>
@@ -71,7 +71,28 @@
                 <p>Российская Федерация, Новгородская область, город Пестово, Устюженское шоссе 4.</p>
             </div> -->
         </div>
+
+        <div onclick="qora()" class="qora2_bg"></div>
+        <div class="qora1">
+          <div class="zakaz_zvonok">
+            <div class="zvonk_img"><p onclick="close3()">Закрыть <i class="bi bi-x-lg"></i></p></div>
+            <div class="zvonk_imgs"><img src="./img/logo.svg" alt=""></div>
+            <div class="zvonok_text">
+              <h1>Здравствуйте!
+                Оставьте номер, и мы Вам перезвоним!</h1>
+                <div class="zvonk_inp">
+                  <input type="tel" placeholder="+998(__)___-__-__">
+                  <button>Позвоните мне!</button>
+                </div>
+                <p>Нажимая на кнопку "Позвоните мне", я даю свое согласие на обработку персональных данных и принимаю <a href="#">условия соглашения</a></p>
+                <div class="zvonk_h3">
+                  <h3>Выбрать удобное время звонка</h3>
+                </div>
+            </div>
+          </div>
+        </div>
     </div>
+
     <div class="cancel_div">
         <a href="./home.html"><h1 style="cursor: pointer;">Главная</h1></a>
         <h1>/</h1>
@@ -572,10 +593,28 @@
       </div>
   </div>
 </div>
-</div>
+  </div>
 
 
 <script>
+    function nav_btn12() {
+    document.querySelector(".zakaz_zvonok").style = "display: block;"
+    document.querySelector(".qora2_bg").style = "display: flex;"
+    document.querySelector("body").style="overflow:hidden"
+  }
+
+  function close3() {
+    document.querySelector(".zakaz_zvonok").style = "display:none;"
+    document.querySelector(".qora2_bg").style = "display:none;"
+    document.querySelector("body").style="overflow:scroll"
+  }
+
+  function qora() {
+    document.querySelector(".zakaz_zvonok").style = "display:none;"
+    document.querySelector(".qora2_bg").style = "display:none;"
+    document.querySelector("body").style="overflow:scroll"
+  }
+
     function menu() {
             document.querySelector(".nav_links2").style = "position: fixed; right: 0; transition: .5;"
             document.querySelector("body").style="overflow:hidden"
