@@ -60,6 +60,7 @@
 
 
 
+
 .home_container {
     width: 100%;
     position: relative;
@@ -1154,6 +1155,173 @@
 .katalog_swiper_in{
     width: 62%;
 }
+
+.mab_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mob_left_filter {
+    margin-top: 4%;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 2rem;
+}
+
+.mob_left_filt_h1 p {
+    border-bottom: 4px dashed #000;
+    font-family: "Oswald",sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 2px dashed black;
+    padding: 7px 0;
+    text-transform: uppercase;
+}
+
+.mob_left_filt_a p a {
+    display: block;
+    padding: 10px 0px;
+    color: black;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 18px;
+    transition: .5s ease;
+}
+
+.mob_left_filt_a p a:hover {
+    color: #4E9200;
+}
+
+.mob_left_filt_bot_h1 p {
+    font-family: "Oswald",sans-serif;
+    font-size: 22px;
+    color: #000;
+    border-bottom: 2px dashed black;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    transition: .5s ease;
+    margin-top: 2rem;
+}
+
+.mob_left_filt_bot_narx h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    padding: 10px 10px;
+}
+
+.mob_left_flt_bot_narx_inps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.mob_left_flt_bot_narx_inps input {
+    width: 92px;
+    min-width: 50px;
+    padding: 6px 5px;
+    font-size: 14px;
+    font-family: "Roboto Condensed",sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+}
+
+.razmer_check_box_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #ccc;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.razmer_check_box_left p #checks {
+    margin-right: 0.5rem;
+}
+
+.mob_left_filt_bot_razmer {
+    margin-top: 1.5rem;
+}
+
+.mob_left_filt_bot_razmer h3 {
+    padding: 0.5rem;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1.5px solid #ccc;
+    cursor: pointer;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #c2c2c2;
+  border-radius: 0.5px;
+  height: 3.5px;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -6.25px; /* Centers thumb on the track */
+  background-color: #4e9200;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #4e9200;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #c2c2c2;
+  border-radius: 0.5px;
+  height: 3.5px;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #4e9200;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #4e9200;
+  outline-offset: 0.125rem;
+}
+
+
+.mob_left_flt_bot_narx_inps input::placeholder {
+    color: #000;
+}
+
 .right_swiper{
     width: 400px;
     margin-left: 25px;
@@ -1885,6 +2053,19 @@
         padding: 20px;
     }
 
+    .mab_box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+
+    .mob_left_filter {
+        margin-top: 4%;
+        width: 100%;
+        max-width: none;
+        margin-right: auto;
+    }
+
     .strelka_p img {
         display: none;
     }
@@ -1996,7 +2177,6 @@
     gap: 40px;
     max-width: 1200px;
     width: 100%;
-    margin: auto;
     margin-top: 80px;
 }
 @media(max-width:900px){
